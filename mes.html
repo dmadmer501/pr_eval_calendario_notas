@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Notas del mes</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <a href="index.html">← Volver al calendario</a>
+        <h1 id="nombre-mes"></h1>
+    </header>
+
+    <section id="seccion-formulario">
+        <h3>Nueva Nota</h3>
+
+        <form id="formulario-nota">
+            <input type="hidden" id="nota-id">
+            <input type="text" id="titulo" placeholder="Título" required>
+            <textarea id="descripcion" placeholder="Descripción" required></textarea>
+            <button type="submit">Guardar nota</button>
+        </form>
+    </section>
+
+    <section id="listado">
+        <h2>Mis Notas</h2>
+        <ul id="lista-notas"></ul>
+    </section>
+
+    <script src="js/app_mes.js"></script>
+
+</body>
+</html>
